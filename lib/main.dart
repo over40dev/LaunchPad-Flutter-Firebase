@@ -31,6 +31,14 @@ class _RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text('LaunchPad Flutter Firebase'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.list),
+            onPressed: () {
+              _pushSaved();
+            },
+          ),
+        ],
       ),
       body: _buildSuggestions(),
     );
@@ -40,7 +48,9 @@ class _RandomWordsState extends State<RandomWords> {
     return ListView.builder(
       padding: EdgeInsets.all(16.0),
       itemBuilder: (context, i) {
-        if (i.isOdd) return Divider();
+        if (i.isOdd) {
+          return Divider();
+        }
 
         final index = i ~/ 2;
         if (index >= _suggestions.length) {
@@ -74,4 +84,36 @@ class _RandomWordsState extends State<RandomWords> {
       },
     );
   }
+
+  void _pushSaved() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (
+          BuildContext context,
+        ) {
+          final tiles = _saved.map((WordPair pair) {
+            return ListTile(
+              title: Text(
+                pair.asPascalCase,
+                style: _biggerFont,
+              ),
+            );
+          });
+
+          final divided = ListTile.divideTiles(
+            tiles: tiles,
+            context: context,
+          ).toList();
+
+          return Scaffold(
+            appBar: AppBar(
+              title: Text('Saved Suggestions'),
+            ),
+            body: ListView(children: divided),
+          );
+        },
+      ),
+    );
+  }
+
 }
