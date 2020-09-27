@@ -11,6 +11,9 @@ class LaunchPadApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Welcome to this Flutter Firebase Starter',
+      theme: ThemeData(
+        primaryColor: Colors.green[400],
+      ),
       home: RandomWords(),
     );
   }
