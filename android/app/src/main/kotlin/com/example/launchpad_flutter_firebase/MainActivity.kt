@@ -1,4 +1,4 @@
-package com.example.launchpad_flutter_firebase
+package dev.over40.launchpad_flutter_firebase
 
 import io.flutter.embedding.android.FlutterActivity
 
