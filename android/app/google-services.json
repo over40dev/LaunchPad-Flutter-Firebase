@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "206386185512",
+    "firebase_url": "https://launchpad-flutter-firebase.firebaseio.com",
+    "project_id": "launchpad-flutter-firebase",
+    "storage_bucket": "launchpad-flutter-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206386185512:android:68107f4d9b6a09f428bc1d",
+        "android_client_info": {
+          "package_name": "dev.over40.launchpad_flutter_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206386185512-pj6cdt763tastp07qnb7lk29fq2kkn0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.over40.launchpad_flutter_firebase",
+            "certificate_hash": "1d9a58c1de562bb0bfbd1c3967c5872ea9891f4c"
+          }
+        },
+        {
+          "client_id": "206386185512-uppqr7gedtseqbjqrjdm3kgfuphmiq2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf5EexiHhfDMq_wVU6YWU23vQNxdlZ5Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206386185512-uppqr7gedtseqbjqrjdm3kgfuphmiq2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
